@@ -85,7 +85,7 @@ export default {
     },
     async created() {
         let response = await fetch("./accents.txt");
-        let text = (await response.text()).split("\r\n");
+        let text = (await response.text()).split("\n");
         let vows, acc;
         const VOWELS = "уеыаоэяиюё";
         for (let i = 0; i < text.length; i++) {
